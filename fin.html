@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Finance Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Finance Dashboard 💰</h1>
+
+  <!-- Role -->
+  <div class="role">
+    <label>Select Role:</label>
+    <select id="role">
+      <option value="viewer">Viewer</option>
+      <option value="admin">Admin</option>
+    </select>
+  </div>
+
+  <!-- Cards -->
+  <div class="cards">
+    <div class="card">
+      <h2 class="section-title">Overview</h2>
+
+<div class="cards">
+  ...
+</div>
+      <h2>Balance</h2>
+      <p id="balance">₹ 0</p>
+    </div>
+
+    <div class="card">
+      <h2 class="section-title">Overview</h2>
+      <p id="income" class="income">₹ 0</p>
+    </div>
+
+    <div class="card">
+      <h2>Expenses</h2>
+      <p id="expense" class="expense">₹ 0</p>
+    </div>
+  </div>
+
+  <!-- Transactions -->
+  <div class="transactions">
+    <h2>Transactions</h2>
+
+    <input type="text" id="search" placeholder="Search category...">
+
+    <button id="addBtn">Add Transaction</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>Category</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+  <!-- Insights -->
+  <div class="insights">
+    <h2>Insights</h2>
+    <p id="insight"></p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
