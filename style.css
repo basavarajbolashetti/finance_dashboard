@@ -1,0 +1,134 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+  margin: 0;
+  padding: 20px;
+  color: white;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+/* Role */
+.role {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.income {
+  color: #00ff9d;
+}
+
+.expense {
+  color: #ff4d6d;
+}
+
+/* Transactions */
+.transactions {
+  margin-top: 30px;
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+button {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  button {
+    width: auto;
+  }
+}
+button {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #6c5ce7;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #4834d4;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Insights */
+.insights {
+  margin-top: 30px;
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 15px;
+}
+.section-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  opacity: 0.8;
+}
+.transactions {
+  overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+tr:hover {
+  background: rgba(255,255,255,0.1);
+}
